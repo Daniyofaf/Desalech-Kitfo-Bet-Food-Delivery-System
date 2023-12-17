@@ -30,4 +30,17 @@ class ContactFormController extends Controller
         // Redirect or perform any other action after submitting the form
         return redirect()->back()->with('success', 'Form submitted successfully!');
     }
+
+    public function index()
+    {
+        
+        $contacts = ContactForm::all(); // Retrieve all contact form entries
+
+        //dd($contacts); // Check if this dumps data; if yes, then data is being retrieved
+
+
+        return view('admin/dashboard', ['contacts' => $contacts]);
+    }
+
+
 }

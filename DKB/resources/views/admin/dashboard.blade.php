@@ -1,37 +1,32 @@
 <x-app-layout>
-    
-
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-
                     <table>
                         <thead>
                             <tr>
                                 <th>Full Name</th>
-                                <th>Email       </th>
-                                <th>phone number</th>
-                                <th>address</th>
-                                <th>image</th>
-                                <th>message</th>
-                                <!-- Other table headers -->
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Address</th>
+                                <th>Image</th>
+                                <th>Message</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Daniel</td>
-                                <td>dani@gmail.com</td>
-                                <td>+251943072122</td>
-                                <td>Addis Ababa</td>
-                                <td>screenshot.jpg</td>
-                                <td>Bole Medhanealem</td>
-                                <!-- Display other form fields within respective columns -->
-                            </tr>
+                            @foreach($contacts as $contact)
+                                <tr>
+                                    <td>{{ $contact->full_name }}</td>
+                                    <td>{{ $contact->email }}</td>
+                                    <td>{{ $contact->phone_number }}</td>
+                                    <td>{{ $contact->address }}</td>
+                                    <td>{{ $contact->message }}</td>
+                                    <td>{{ $contact->image }}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
-
-
                 </div>
             </div>
         </div>
