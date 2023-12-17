@@ -8,6 +8,6 @@ function authenticated(Request $request, $user)
     if ($user->role === 'admin') {
         return redirect()->route('admin.dashboard');
     } else {
-        return redirect()->route('user.form');
+        return redirect()->route('admin.user_form');
     }
 }

@@ -2,8 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use OpenAdmin\Admin\Controllers\UserController;
-use OpenAdmin\Admin\Controllers\AdminController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ContactFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,11 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/user/form', [UserController::class, 'showForm'])->name('admin.form');
+    Route::get('/admin/user_form', [UserController::class, 'showForm'])->name('admin.user_form');
     Route::get('/admin/dashboard', [AdminController::class, 'showDashboard'])->name('admin.dashboard');
 });
+
+
+
+Route::post('/submit-form', [ContactFormController::class, 'submit'])->name('submit.form');
+

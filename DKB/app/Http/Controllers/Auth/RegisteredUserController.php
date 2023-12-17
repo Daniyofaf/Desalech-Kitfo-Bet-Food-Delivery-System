@@ -32,7 +32,7 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -44,7 +44,13 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
+        // Check if the authenticated user is an admin
+        if (Auth::check() && Auth::user()->email === 'admin@admin.com') {
+            // If the authenticated user is admin, redirect to the admin dashboard
+            return redirect()->route('admin.dashboard');
+        } else {
+            return redirect()->route('admin.user_form');
+        }
 
         return redirect(RouteServiceProvider::HOME);
     }
