@@ -17,8 +17,10 @@ class ContactForm extends Model
         'email',
         'phone_number',
         'address',
+        'food',
         'image', // Assuming this is the field to store the screenshot file path
         'message',
+        'status',
     ];
 
 }

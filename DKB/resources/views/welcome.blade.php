@@ -434,7 +434,7 @@
                                         <h3 class="title-3">
                                             <a href="#" class="card-title">KITFO</a>
                                         </h3>
-                                        <span class="span title-2">500 Birr</span>
+                                        <span class="span title-2">1000 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
@@ -457,14 +457,14 @@
 
                                     <div class="title-wrapper">
                                         <h3 class="title-3">
-                                            <a href="#" class="card-title">Lasagne</a>
+                                            <a href="#" class="card-title">Tibs</a>
                                         </h3>
 
-                                        <span class="span title-2">400 Birr</span>
+                                        <span class="span title-2">800 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
-                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                                         ground meats
                                     </p>
 
                                 </div>
@@ -475,8 +475,8 @@
                         <li>
                             <div class="menu-card hover:card">
 
-                                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                                    <img src="./images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin" class="img-cover">
+                                <figure class="card-banner img-holder" style="--width: 20px; --height: 100px;">
+                                    <img src="./images/meat.jpeg" width="50px" height="50px" loading="lazy" alt="Butternut Pumpkin" class="img-cover">
                                 </figure>
 
                                 <div>
@@ -502,16 +502,16 @@
                             <div class="menu-card hover:card">
 
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                                    <img src="./images/menu-4.png" width="100" height="100" loading="lazy" alt="devloper" class="img-cover">
+                                    <img src="./images/menu-1.png" width="100" height="100" loading="lazy" alt="devloper" class="img-cover">
                                 </figure>
 
                                 <div>
 
                                     <div class="title-wrapper">
                                         <h3 class="title-3">
-                                            <a href="#" class="card-title">CUKKAME</a>
+                                            <a href="#" class="card-title">Special KITFO</a>
                                         </h3>
-                                        <span class="span title-2">500 Birr</span>
+                                        <span class="span title-2">1500 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
@@ -524,22 +524,21 @@
                             <div class="menu-card hover:card">
 
                                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                                    <img src="./images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas" class="img-cover">
+                                    <img src="./images/service-3.jpg" width="100" height="100" loading="lazy" alt="Olivas Rellenas" class="img-cover">
                                 </figure>
 
                                 <div>
 
                                     <div class="title-wrapper">
                                         <h3 class="title-3">
-                                            <a href="#" class="card-title">Olivas Rellenas</a>
+                                            <a href="#" class="card-title">Drinks</a>
                                         </h3>
 
                                         <span class="span title-2">250 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
-                                        Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
-                                    </p>
+                                        Tej                                    </p>
 
                                 </div>
 
@@ -557,14 +556,14 @@
 
                                     <div class="title-wrapper">
                                         <h3 class="title-3">
-                                            <a href="#" class="card-title">Opu Fish</a>
+                                            <a href="#" class="card-title">Chikina Tibs</a>
                                         </h3>
 
-                                        <span class="span title-2">500 Birr</span>
+                                        <span class="span title-2">700 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
-                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                                        Vegetables, cheeses, ground meats, seasonings and spices
                                     </p>
 
                                 </div>

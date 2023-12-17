@@ -116,12 +116,21 @@
               <label for="address"><b>Address</b></label>
               <input type="text" placeholder="Enter your Address" name="address" required>
 
-              <label for="Text"><b>Make Payment Of The Food At CBE: 1000399781608 And</b></label><br>
+              <select name="food" class="form-select" aria-label="Default select example">
+                <option selected>Choose Your favorite Food</option>
+                <option value="kitfo">Kitfo</option>
+                <option value="kurt">Kurt</option>
+                <option value="tibs">Tibs</option>
+              </select>
+
+              <br><br>
+
+              <label for="Text"><b>Make Payment Of The Food At CBE: 1000399781608 And</b></label><br><br>
               <label for="image"><b>Upload Screenshot</b></label>
-              <input type="file" name="image" accept="image/*"><br><br>
+              <input type="file" name="image" accept="image/*" required><br><br>
 
               <label for="message"><b>Write Your Specific Area For The Accuracy Of The Food Deliver</b></label>
-              <textarea name="message" rows="5" cols="5" placeholder="Write your Location with details here..."></textarea>
+              <textarea name="message" rows="5" cols="5" placeholder="Write your Location with details here..." required></textarea>
 
               <button type="submit" class="SendButton">Send</button>
             </div>

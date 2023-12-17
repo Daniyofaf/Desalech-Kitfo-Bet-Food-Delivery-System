@@ -18,7 +18,9 @@ return new class extends Migration
                 $table->string('phone_number');
                 $table->string('address');
                 $table->string('message');
+                $table->string('food');
                 $table->string('image');
+                $table->string('status')->default('pending'); // Add a 'status' field with a default value of 'pending'
                 $table->timestamps();
             });
             

@@ -21,9 +21,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', [ContactFormController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -42,3 +47,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::post('/submit-form', [ContactFormController::class, 'submit'])->name('submit.form');
 
+Route::get('/admin/dashboard', [ContactFormController::class, 'index'])->name('admin.dashboard');
+
+Route::post('/admin/approve/{id}', [ContactFormController::class, 'approveContact'])->name('approve.contact');
+Route::post('/admin/decline/{id}', [ContactFormController::class, 'declineContact'])->name('decline.contact');
