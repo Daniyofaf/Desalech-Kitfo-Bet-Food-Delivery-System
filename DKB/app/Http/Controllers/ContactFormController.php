@@ -75,4 +75,17 @@ class ContactFormController extends Controller
         // Redirect back or to any other page as needed
         return redirect()->back()->with('success', 'Contact declined successfully!');
     }
+
+    public function index()
+    {
+        
+        $contacts = ContactForm::all(); // Retrieve all contact form entries
+
+        //dd($contacts); // Check if this dumps data; if yes, then data is being retrieved
+
+
+        return view('admin/dashboard', ['contacts' => $contacts]);
+    }
+
+
 }

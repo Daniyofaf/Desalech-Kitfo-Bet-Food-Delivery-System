@@ -3,19 +3,17 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+
                     <table>
                         <thead>
                             <tr>
-                                <th>{{ 'id' }}</th>
-                                <th style="padding: 7px;">{{ 'Full Name' }}</th>
-                                <th style="padding: 7px;">{{ 'Email' }}</th>
-                                <th style="padding: 7px;">{{ 'Phone Number' }}</th>
-                                <th style="padding: 7px;">{{ 'Address' }}</th>
-                                <th style="padding: 7px;">{{ 'Message' }}</th>
-                                <th style="padding: 7px;">{{ 'Requested Food' }}</th>
-                                <th style="padding: 7px;">{{ 'Payment Photo' }}</th>
-                                <th style="padding: 7px;">{{ 'status' }}</th>
-                                <th style="padding: 7px;">Actions</th>
+                                <th>Full Name</th>
+                                <th>Email       </th>
+                                <th>phone number</th>
+                                <th>address</th>
+                                <th>image</th>
+                                <th>message</th>
+                                <!-- Other table headers -->
                             </tr>
                         </thead>
                         <tbody>
