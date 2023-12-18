@@ -100,12 +100,12 @@
                             <span class="span">About Us</span>
                         </a>
                     </li>
-                    <li class="navbar-item">
+                    <!-- <li class="navbar-item">
                         <a href="#" class="navbar-link hover-underline">
                             <div class="separator"></div>
                             <span class="span">Our Chefs</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="navbar-item">
                         <a href="#footer" class="navbar-link hover-underline">
                             <div class="separator"></div>
@@ -486,7 +486,7 @@
                                             <a href="#" class="card-title">KURT</a>
                                         </h3>
 
-                                        <span class="span title-2">350 Birr</span>
+                                        <span class="span title-2">500 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
@@ -509,7 +509,7 @@
 
                                     <div class="title-wrapper">
                                         <h3 class="title-3">
-                                            <a href="#" class="card-title">Special KITFO</a>
+                                            <a href="#" class="card-title">Special Kitfo</a>
                                         </h3>
                                         <span class="span title-2">1500 Birr</span>
                                     </div>
@@ -534,7 +534,7 @@
                                             <a href="#" class="card-title">Drinks</a>
                                         </h3>
 
-                                        <span class="span title-2">250 Birr</span>
+                                        <span class="span title-2">50 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
@@ -544,7 +544,7 @@
 
                             </div>
                         </li>
-
+ 
                         <li>
                             <div class="menu-card hover:card">
 
@@ -596,7 +596,7 @@
 
                     <div class="form reservation-form bg-black-10">
 
-                        <form action="https://formspree.io/f/mnqynnpk" class="form-left" method="POST">
+                        <form href="http://127.0.0.1:8000/register" class="form-left">
 
                             <h2 class="headline-1 text-center">Online Reservation</h2>
 
@@ -643,9 +643,9 @@
                                     <select name="person" class="input-field">
                                         <option value="08:00am">08 : 00 am</option>
                                         <option value="09:00am">09 : 00 am</option>
-                                        <option value="010:00am">10 : 00 am</option>
-                                        <option value="011:00am">11 : 00 am</option>
-                                        <option value="012:00am">12 : 00 am</option>
+                                        <option value="10:00am">10 : 00 am</option>
+                                        <option value="11:00am">11 : 00 am</option>
+                                        <option value="12:00am">12 : 00 am</option>
                                         <option value="01:00pm">01 : 00 pm</option>
                                         <option value="02:00pm">02 : 00 pm</option>
                                         <option value="03:00pm">03 : 00 pm</option>
@@ -665,8 +665,8 @@
 
                             <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
 
-                            <button type="submit" class="btn btn-secondary">Submit</button>
-                            <button type="submit">send</button>
+                            <button type="submit" class="btn btn-secondary"><a href="http://127.0.0.1:8000/register">Submit</a></button>
+                            <button type="submit"></button>
 
                         </form>
 
@@ -874,7 +874,7 @@
 
     <!-- #FOOTER -->
 
-    <footer class="footer section has-bg-image text-center" style="background-image: url('./images/footer-bg.jpg')">
+    <footer id="footer" class="footer section has-bg-image text-center" style="background-image: url('./images/footer-bg.jpg')">
         <div class="container">
 
             <div class="footer-top grid-list">

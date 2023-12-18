@@ -21,5 +21,10 @@
                 {{ __('Email Password Reset Link') }}
             </x-primary-button>
         </div>
+
+        <div class="flex items-center justify-center mt-4"> <!-- Centering container -->
+            <a href="http://127.0.0.1:8000/" style=" text-align: center;">Back To Homepage</a>
+        </div>
+
     </form>
 </x-guest-layout>

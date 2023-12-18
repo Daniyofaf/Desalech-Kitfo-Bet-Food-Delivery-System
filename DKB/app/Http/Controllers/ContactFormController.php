@@ -58,7 +58,7 @@ class ContactFormController extends Controller
     {
         // Find the contact by ID and update its status as approved
         $contact = ContactForm::findOrFail($id);
-        $contact->status = 'approved';
+        $contact->status = 'Approved';
         $contact->save();
 
         // Redirect back or to any other page as needed
@@ -69,23 +69,14 @@ class ContactFormController extends Controller
     {
         // Find the contact by ID and update its status as declined
         $contact = ContactForm::findOrFail($id);
-        $contact->status = 'declined';
+        $contact->status = 'Declined';
         $contact->save();
 
         // Redirect back or to any other page as needed
         return redirect()->back()->with('success', 'Contact declined successfully!');
     }
 
-    public function index()
-    {
-        
-        $contacts = ContactForm::all(); // Retrieve all contact form entries
-
-        //dd($contacts); // Check if this dumps data; if yes, then data is being retrieved
-
-
-        return view('admin/dashboard', ['contacts' => $contacts]);
-    }
+   
 
 
 }

@@ -116,7 +116,7 @@
               <label for="address"><b>Address</b></label>
               <input type="text" placeholder="Enter your Address" name="address" required>
 
-              <select name="food" class="form-select" aria-label="Default select example">
+              <select name="food" class="form-select" aria-label="Default select example" required>
                 <option selected>Choose Your favorite Food</option>
                 <option value="kitfo">Kitfo</option>
                 <option value="kurt">Kurt</option>
