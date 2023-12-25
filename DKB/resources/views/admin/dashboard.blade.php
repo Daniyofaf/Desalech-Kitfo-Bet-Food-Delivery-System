@@ -1,4 +1,10 @@
 <x-app-layout>
+    <head>
+<link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/svg+xml">
+
+<title>{{ config('', 'Desalech Kitfo Bet Food Delivery System') }}</title>
+    </head>
+
 
 
 <style>

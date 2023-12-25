@@ -2,6 +2,7 @@
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+<link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/svg+xml">
 
 
 <head>
@@ -9,7 +10,11 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+  
+<link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/svg+xml">
 
+<title>{{ config('', 'Desalech Kitfo Bet Food Delivery System') }}</title>
+    
   <!-- Scripts -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -116,7 +121,7 @@
               <label for="address"><b>Address</b></label>
               <input type="text" placeholder="Enter your Address" name="address" required>
 
-              <select name="food" class="form-select" aria-label="Default select example" required>
+              <select name="food" class="form-select" aria-label="Default select example" style="background-color: #4CAF50; color:white; border-radius:25px; " required>
                 <option selected>Choose Your favorite Food</option>
                 <option value="kitfo">Kitfo</option>
                 <option value="kurt">Kurt</option>
@@ -127,7 +132,7 @@
 
               <label for="Text"><b>Make Payment Of The Food At CBE: 1000399781608 And</b></label><br><br>
               <label for="image"><b>Upload Screenshot</b></label>
-              <input type="file" name="image" accept="image/*" required><br><br>
+              <input type="file" name="image" accept="image/*" style="border-radius:25px; color:white; background-color:#4CAF50; border-color:#ddd; " required><br><br>
 
               <label for="message"><b>Write Your Specific Area For The Accuracy Of The Food Deliver</b></label>
               <textarea name="message" rows="5" cols="5" placeholder="Write your Location with details here..." required></textarea>
