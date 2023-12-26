@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -486,7 +484,7 @@
                                             <a href="#" class="card-title">KURT</a>
                                         </h3>
 
-                                        <span class="span title-2">500 Birr</span>
+                                        <span class="span title-2">1000 Birr</span>
                                     </div>
 
                                     <p class="card-text label-1">
